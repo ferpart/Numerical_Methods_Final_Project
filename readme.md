@@ -14,12 +14,8 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 
 **4rd.** Once is finish the installation you can go to the Command prompt of your computer.
 	
-  ### **How to enter to the "command prompt":**
-  
-  > - Press the "windows" key + the key "s".
-  
-  > - Now that pop up a menu, just write the word **"command prompt"**.
-  
-  > - And select the application.
-  
-  > - _**Congratulations!** You are now in the command prompt window._
+ ### - **How to enter to the "command prompt":**
+  - Press the "windows" key + the key "s".
+  - Now that pop up a menu, just write the word **"command prompt"**.
+  - And select the application.
+  - _**Congratulations!** You are now in the command prompt window._
