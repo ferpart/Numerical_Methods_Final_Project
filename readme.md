@@ -14,8 +14,21 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 
 **4rd.** Once is finish the installation you can go to the Command prompt of your computer.
 	
- ### - **How to enter to the "command prompt":**
-  - Press the "windows" key + the key "s".
-  - Now that pop up a menu, just write the word **"command prompt"**.
-  - And select the application.
-  - _**Congratulations!** You are now in the command prompt window._
+ #### - **How to enter to the "command prompt":**
+ ```
+ - Press the "windows" key + the key "s".
+ - Now that pop up a menu, just write the word "command prompt".
+ - And select the application.
+ - Congratulations! You are now in the command prompt window.
+  ```
+**5th.** Now in the command prompt you have to write this command:
+ > python --version
+
+**6th.** This message have to appear after the command:
+> Python (the number of version)
+
+- If appears, **CONGRATULIONS!** you are one step closer to use the application.
+	- Now still in the "command prompt" write the next command:
+	> pip install numpy
+	
+	**wait until the message: "Successfully installed numpy-no.version" appears**
