@@ -59,6 +59,7 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 **8th.** Now, **still in the command prompt**, please write the next command step by step:
 - **step one:** write 
 	> cd desktop 
+	
 and press enter.
 
 - **step two:** you have to see something like this in the command prompt: 
@@ -66,8 +67,89 @@ and press enter.
 
 - **step three:** Now, just put 
 	> xxxx.py 
+	
 and then press the key enter.
 		
 **9th.** Feel free to put any value in the blanks for the volts and the resistor.
 
 **10th.** Now that you have enter the values, press the button **submit values** and you will get the answers you are searching for with this program.
+
+**Note: the program is designed to in case you put a value that is not an Integer, the progrma will close automatically.**
+
+## If you have MAC follow this steps:
+
+**1st.** The first thing you have to do is to download python (If you already have it, you can skip this part and go to the 2nd point):
+
+[Python](https://www.python.org/downloads/)
+
+Click on the button that says: **"Download Python 3.8.3"** and your download will start.
+
+**2nd.** Now, once that is downloaded you have browse to the download folders and launch the installer and you will see a pop up.
+
+**3rd.** Accept all the terms & conditions and press the button "continue" till you see the button "close".
+
+**4rd.** Open your terminal to check if python is installed correctly.
+	- In the terminal you have to write the word 
+		>python3 (all lowercase, without quotes intothe terminal) and press **enter**.
+		
+**5th.** This message have to appear:
+	> Python (the number of version) 
+	
+- If appears, **CONGRATULIONS!** you are one step closer to use the application.
+	- Now still in the terminal write the next command:
+		> pip install numpy
+		
+	**wait until the message: "Successfully installed numpy-no.version" appears.**
+	
+	- If not, please try the command:
+		> sudo pip install numpy
+		
+	**wait until the message: "Successfully installed numpy-no.version" appears.**
+	
+- If it appears you are now **ready** to use the application. **If not please** return to the step 5th.
+	- If still does not work, please return to the **1st step.**
+	
+**6th.** Once you download the application. now, just put 
+	> "xxxx.py" 
+	
+and then press the key enter.
+
+**7th.** Feel free to put any value in the blanks for the volts and the resistor.
+
+**8th.** Now that you have enter the values, press the button **submit values** and you will get the answers you are searching for with this program.
+
+**Note: the program is designed to in case you put a value that is not an Integer, the progrma will close automatically.**
+
+## If you have Linux follow this steps:
+
+**1st.** In Linux the python language most be installed by default.
+
+**2nd.** Open up a terminal window and then type:
+	> python3 --version
+
+**3rd.** It would appear a messaage like this:
+	> Python (the number of version)
+	
+	
+- If appears, **CONGRATULIONS!** you are one step closer to use the application.
+
+- **If not**, please put the next command:
+	> sudo apt-get install python3
+
+- Now still in the terminal window in case you have numpy installed please still write the next command to **upgrade or intall** numpy´s library:
+	> $ sudo apt install python3-numpy
+	
+- If it appears **you are now ready to use the application**. **If not** please return to the beginning of this part after 3rd step.
+
+**Now you are ready to use the program.**
+
+**4rd.** Once you download the application in the terminal put the next command:
+	> python3 "xxxx.py" 
+
+and then press the key enter.
+
+**5th.** Feel free to put any value in the blanks for the volts and the resistor.
+
+**6th.** Now that you have enter the values, press the button **submit values** and you will get the answers you are searching for with this program.
+
+**Note: the program is designed to in case you put a value that is not an Integer, the progrma will close automatically.**
