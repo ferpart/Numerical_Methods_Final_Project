@@ -110,6 +110,7 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 	- If still does not work, please return to the **1st step.**
 	
 **6th.** Once you download the application. now, just put 
+
 	> "xxxx.py" 
 	
 and then press the key enter.
@@ -125,9 +126,11 @@ and then press the key enter.
 **1st.** In Linux the python language most be installed by default.
 
 **2nd.** Open up a terminal window and then type:
+
 	> python3 --version
 
 **3rd.** It would appear a messaage like this:
+
 	> Python (the number of version)
 	
 	
@@ -144,6 +147,7 @@ and then press the key enter.
 **Now you are ready to use the program.**
 
 **4rd.** Once you download the application in the terminal put the next command:
+
 	> python3 "xxxx.py" 
 
 and then press the key enter.
