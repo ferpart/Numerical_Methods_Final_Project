@@ -140,7 +140,7 @@ and then press the key enter.
 	> sudo apt-get install python3
 
 - Now still in the terminal window in case you have numpy installed please still write the next command to **upgrade or intall** numpy´s library:
-	> $ sudo apt install python3-numpy
+	> $ pip3 install numpy
 	
 - If it appears **you are now ready to use the application**. **If not** please return to the beginning of this part after 3rd step.
 
