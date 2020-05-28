@@ -25,4 +25,5 @@ def gauss_jordan(matrix, sol_matrix):
                 matrix[i,j] -= factor * matrix[k,j]
             sol_matrix[i] -= factor*sol_matrix[k]
             
-    return sol_matrix.tolist(), matrix.tolist()
+    return [sol_matrix[0], sol_matrix[5]]
+

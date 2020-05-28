@@ -1,185 +1,146 @@
-import tkinter as tk
-from tkinter.filedialog import askopenfile, asksaveasfile
 from pathlib import Path
+import tkinter as tk
+from tkinter import messagebox
+import sys
 from .gaussjordan import gauss_jordan
-
 
 class App:
     def __init__(self):
+        self.voltages = []
+        self.resistances = []
         self.app = tk.Tk()
         self.app.title("Current Calculator")
 
-        self.create_buttons()
+        background = tk.PhotoImage(file = image_selector("Bottom.png"))
+        foreground = tk.PhotoImage(file = image_selector("Resistance.png"))
+        self.final = tk.PhotoImage(file = image_selector("Result.png"))
+        self.width = background.width()
+        self.height = background.height()
 
+        frame = tk.Frame(self.app)
+        frame.pack()
+
+        self.canvas = tk.Canvas(frame, bg="white", width=self.width, height=self.height+30)
+        self.canvas.pack()
+        
+        self.canvas.create_image(self.width/2, self.height/2, image = background, tags = "background")
+        self.canvas.create_image(self.width/2, self.height/2, image = foreground, tags="foreground")
+
+        resistance_list, voltage_list = self.entries()
+        v_submit_butt = tk.Button(text = "Submit Values")
+        v_submit_butt["command"] = lambda binst=v_submit_butt: self.get_values(resistance_list, voltage_list, binst)
+
+        self.canvas.create_window(self.width/2, 255, window=v_submit_butt)
         self.app.mainloop()
 
-    def create_buttons(self):
-        l_1 = tk.Label(self.app, text = "Select CSV file")
-        l_2 = tk.Label(self.app, text = "Solve system")
-        l_3 = tk.Label(self.app, text = "Select file type and save")
+    def get_values(self, resistance_list, voltage_list, binst):
+        self.resistances = get_elem_values(resistance_list)
+        self.voltages = get_elem_values(voltage_list)
+        binst.destroy()
+        self.canvas.delete("foreground")
+        self.final_disp(self.set_matrix(self.resistances, self.voltages))
 
-        l_list = [l_1, l_2, l_3]
-        l_2["state"] = "disabled"
-        l_3["state"] = "disabled"
+    def final_disp(self, results):
+        self.canvas.create_image(self.width/2, self.height/2, image = self.final)
 
-        for i in l_list:
-            i["wraplength"] = 80
-
-        b_1 = tk.Button(self.app, text = "Load", command = self.load_file)
-        b_2 = tk.Button(self.app, text = "Solve", command = self.solve)
-        b_3 = tk.Button(self.app, text = "Save", command = self.save_file)
-
-        b_2["state"] = "disabled"
-        b_3["state"] = "disabled"
-
-        b_list = [b_1, b_2, b_3]
-
-        self.r_v = tk.StringVar(self.app, "1")
-
-        r_1 = tk.Radiobutton(self.app, text = "CSV", variable = self.r_v, value = "1")
-        r_1.select()
-        r_2 = tk.Radiobutton(self.app, text = "JSON", variable = self.r_v, value = "2")
-
-        rb_list = [r_1, r_2]
-
-        self.element_list = [l_list, b_list, rb_list]
-
-        elem = 0
-        for i in self.element_list:
-            if elem == 2:
-                break
-            count = 0
-            for j in i:
-                j.grid(row = elem, column = count)
-                j["state"] = "disabled"
-                if count == 0:
-                    j["state"] = "normal"
-                count += 1
-            elem += 1
-
-        count = 0
-        for i in self.element_list[2]:
-            i.grid(row = count, column = 3)
-            i["state"] = "disabled"
-            count += 1
-
-
-    def load_file(self):
-        solve_button_label = self.element_list[0][1]
-        solve_button = self.element_list[1][1]
-        save_button_label = self.element_list[0][2]
-        save_button = self.element_list[1][2]
-        radio_buttons = self.element_list[2]
-
-        save_button_label["state"] = "disabled"
-        save_button["state"] = "disabled"
-
-        for i in radio_buttons:
-            i["state"] = "disabled"
-
-        file_ = askopenfile(mode = "r", filetypes = [("Comma Separated Values", "*.csv")])
-
-        if file_ is not None:
-
-            solve_button_label["state"] = "normal"
-            solve_button["state"] = "normal"
-
-
-            content = file_.read().split("\n")
-            self.content = [i.split(",") for i in content]
-            self.matrix, self.sol_matrix = [], []
-
-            self.matrix = matrix_crop(self.content)
-            self.sol_matrix = column(self.content)
-
-        else:
-            solve_button_label["state"] = "disabled"
-            solve_button["state"] = "disabled"
-        file_.close()
-
-    def save_file(self):
-        if self.r_v.get() == "1":
-            filetype = [("Comma Separated Values", "*.csv")]
-            file_ = asksaveasfile(filetypes = filetype, defaultextension = filetype)
-            file_.write(self.csvify())
-            file_.close()
-        else:
-            filetype = [("JSON", "*.json")]
-            file_ = asksaveasfile(filetypes = filetype, defaultextension = filetype)
-            file_.write(self.jsonify())
-            file_.close()
-
-    def solve(self):        
-        solve_button_label = self.element_list[0][1]
-        solve_button = self.element_list[1][1]
-        save_button_label = self.element_list[0][2]
-        save_button = self.element_list[1][2]
-        radio_buttons = self.element_list[2]
-
-        solve_button_label["state"] = "disabled"
-        solve_button["state"] = "disabled"
-        save_button_label["state"] = "normal"
-        save_button["state"] = "normal"
-
-        for i in radio_buttons:
-            i["state"] = "normal"
-        self.sol_matrix, self.matrix = gauss_jordan(self.matrix, self.sol_matrix)
-
-    def jsonify(self):
-        headers = self.content[0]
-        body = matrix_joiner(self.matrix, self.sol_matrix)
-        
-        full = "[\n "
-        for i in range(len(body)):
-            full += "{\n"
-            for j in range(len(headers)):
-                if j < len(headers)-1:
-                    full += "  \"" + headers[j] + "\"" + ": " + str(body[i][j]) + ",\n"
-                else:
-                    full += "  \"" + headers[j] + "\"" + ": " + str(body[i][j])
-            if i < len(body)-1:
-                full += "\n },\n "
+        voltage = int(self.voltages[0])
+        new_voltages = []
+        for i in range(4):
+            if (i == 0):
+                voltage = round(voltage - (results[0]*int(self.resistances[i])), 3)
             else:
-                full += "\n }\n"
-        full += "]"
+                voltage = round(voltage - (results[1]*int(self.resistances[i])), 3)
+            new_voltages.append(voltage)
 
-        return full
-
-    def csvify(self):
-        headers = str(self.content[0]).strip("[]").replace("'", "") + "\n"
-        matrix = matrix_joiner(self.matrix, self.sol_matrix)
-        body = ""
-        for i in matrix:
-            body += str(i).strip("[]").replace("'", "") + "\n"
+        # resulting voltages
+        self.canvas.create_text(355, 28, text=new_voltages[0], font="Times 15", fill="black")
+        self.canvas.create_text(160, 28, text=new_voltages[1], font="Times 15", fill="black")
+        self.canvas.create_text(160, 215, text=new_voltages[2], font="Times 15", fill="black")
+        self.canvas.create_text(355, 215, text=new_voltages[3], font="Times 15", fill="black")
+        self.canvas.create_text(600, 43, text=self.voltages[0], font="Times 15", fill="black")
+        self.canvas.create_text(600, 195, text=self.voltages[1], font="Times 15", fill="black")
         
-        full = headers + body
+        # resulting currents
+        self.canvas.create_text(450, 125, text=results[0], font="Times 15", fill="black")
+        self.canvas.create_text(250, 125, text=results[1], font="Times 15", fill="black")
 
-        return full
 
-def matrix_joiner(mat_a, mat_b):
-    count = 0
-    for i in mat_a:
-        i.append(mat_b[count][0])
-        count += 1
-    return mat_a
+    def entries(self):
 
-def column(matrix):
-    new_matrix = []
-    count = 0
-    mat_count = 0
-    for i in matrix:
-        if mat_count > 0:
-            new_matrix.append([])
-            new_matrix[count].append(i[len(i)-1])
-            count += 1
-        mat_count +=1
-    return new_matrix 
+        #Resistance entry box creation
+        res_1 = tk.Entry(self.app, width=5)
+        res_2 = tk.Entry(self.app, width=5)
+        res_3 = tk.Entry(self.app, width=5)
+        res_4 = tk.Entry(self.app, width=5)
+        res_5 = tk.Entry(self.app, width=5)
+        res_6 = tk.Entry(self.app, width=5)
 
-def matrix_crop(matrix):
-    new_matrix = []
-    count = 0
-    for i in matrix:
-        if count > 0:
-            new_matrix.append(i[:len(i)-1])
-        count += 1
-    return new_matrix
+        resistance_list = [res_1, res_2, res_3, res_4, res_5, res_6]
+
+        #Voltage entry box creation
+        volt_1 = tk.Entry(self.app, width=5)
+        volt_2 = tk.Entry(self.app, width=5)
+
+        voltage_list = [volt_1, volt_2]
+
+        #Adding Resistance boxes to canvas
+        self.canvas.create_window(453, 16, window=res_1)
+        self.canvas.create_window(250, 16, window=res_2)  
+        self.canvas.create_window(96, 120, window=res_3)
+        self.canvas.create_window(250, 222, window=res_4)
+        self.canvas.create_window(448, 222, window=res_5)
+        self.canvas.create_window(410, 120, window=res_6)
+
+        #Adding voltage boxes to canvas
+        self.canvas.create_window(610, 45, window=volt_1)
+        self.canvas.create_window(610, 190, window=volt_2)
+
+        return (resistance_list, voltage_list)
+
+    def int_converter(self, list):
+        temp_list = []
+        for i in list:
+            if (i.isdigit()):
+                temp_list.append(int(i))
+            else:
+                messagebox.showerror("Error", "Element \"%s\" not a digit" %(i))
+                sys.exit()
+                break
+        return temp_list           
+
+    def set_matrix(self, r, v):
+
+        r = self.int_converter(r)
+        v = self.int_converter(v)
+
+        matrix = [
+                    #  i12   i52   i32   i65   i54   i43
+                    [    1,    1,    1,    0,    0,    0],    #i12
+                    [    0,   -1,    0,    1,   -1,    0],    #i52
+                    [    0,    0,   -1,    0,    0,    1],    #i32
+                    [    0,    0,    0,    0,    1,   -1],    #i65 
+                    [    0, r[5],-r[1],    0,-r[3],-r[2]],    #i54
+                    [ r[0],-r[5],    0,-r[4],    0,    0]     #i43
+        ]
+        sol_matrix = [
+                    [0],
+                    [0], 
+                    [0], 
+                    [0],
+                    [v[1]],
+                    [v[0]]
+        ]
+        
+        return gauss_jordan(matrix, sol_matrix)
+
+def get_elem_values(list):
+    values = []
+    for i in list:
+        values.append(i.get()) 
+        i.destroy()
+    return values   
+
+
+def image_selector(image_name):
+    image_folder = Path("Backgrounds")
+    return (image_folder/image_name)
