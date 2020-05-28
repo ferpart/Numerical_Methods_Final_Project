@@ -183,3 +183,4 @@ def matrix_crop(matrix):
             new_matrix.append(i[:len(i)-1])
         count += 1
     return new_matrix
+
