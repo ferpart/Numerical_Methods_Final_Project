@@ -210,7 +210,7 @@ and then press the key enter.
 
 <img src="Images_MD/csv.jpeg">
 
-### How to create an csv file
+### How to create an csv file.
 
 - Please open the windows office application **Excel**.
 
