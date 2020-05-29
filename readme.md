@@ -10,9 +10,13 @@
 
 Click on the button that says: **"Download Python 3.8.3"** and your download will start.
 
+<img src="Images_MD/downloadpython.jpeg">
+
 **2nd.** Now, once that is downloaded you have to launch the installer and you will see a pop up.
 
 **3rd.** Now in the main window of the installer you have click the checkbox that says **"Add Python 3.5 to PATH"** and then click **"Install Now"**.
+
+<img src="Images_MD/popuppython.jpeg">
 
 **4rd.** Once is finish the installation you can go to the Command prompt of your computer.
 	
@@ -28,6 +32,10 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 
 **6th.** This message have to appear after the command:
 > Python (the number of version)
+
+**LIKE THIS**
+
+<img src="Images_MD/versionpython.jpeg">
 
 - If appears, **CONGRATULIONS!** you are one step closer to use the application.
 	- Now still in the "command prompt" write the next command:
