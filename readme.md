@@ -159,7 +159,7 @@ and then press again the key enter.
 
 **2nd.** Open up a terminal window and then type:
 
-	> python3 --version
+	> python --version
 
 **3rd.** It would appear a messaage like this:
 
