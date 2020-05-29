@@ -4,19 +4,19 @@
 
 **1st.** The first thing you have to do is to download python (If you already have it, you can skip this part and go to the 2nd point):
 
-<img src="Images_MD/python.png" width="70" height="70">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/python.png" width="70" height="70">
 
 [Python](https://www.python.org/downloads/)
 
 Click on the button that says: **"Download Python 3.8.3"** and your download will start.
 
-<img src="Images_MD/downloadpython.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/downloadpython.jpeg">
 
 **2nd.** Now, once that is downloaded you have to launch the installer and you will see a pop up.
 
 **3rd.** Now in the main window of the installer you have click the checkbox that says **"Add Python 3.5 to PATH"** and then click **"Install Now"**.
 
-<img src="Images_MD/popuppython.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/popuppython.jpeg">
 
 **4rd.** Once is finish the installation you can go to the Command prompt of your computer.
 	
@@ -35,7 +35,7 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 
 **LIKE THIS**
 
-<img src="Images_MD/versionpython1.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/versionpython1.jpeg">
 
 - If appears, **CONGRATULIONS!** you are one step closer to use the application.
 	- Now still in the "command prompt" write the next command:
@@ -63,7 +63,7 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 		
 	- **You have to see a list where appears the library numpy listed.**
 	
-	<img src="Images_MD/piplist.jpeg">
+	<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/piplist.jpeg">
 	
 	- If it appears you are now ready to use the application. **If not** please return to the step **6th.**
 		
@@ -81,7 +81,7 @@ and press enter.
 - **step three:** Now, just put 
 	> main.py 
 	
-<img src="Images_MD/directionpython.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/directionpython.jpeg">
 	
 and then press the key enter.
 		
@@ -91,21 +91,21 @@ and then press the key enter.
 
 **1st.** The first thing you have to do is to download python (If you already have it, you can skip this part and go to the 2nd point):
 
-<img src="Images_MD/python.png" width="70" height="70">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/python.png" width="70" height="70">
 
 [Python](https://www.python.org/downloads/)
 
 Click on the button that says: **"Download Python 3.8.3"** and your download will start.
 
-<img src="Images_MD/downloadpython.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/downloadpython.jpeg">
 
 **2nd.** Now, once that is downloaded you have browse to the download folders and launch the installer and you will see a pop up.
 
-<img src="Images_MD/installpythonmac.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/installpythonmac.jpeg">
 
 **3rd.** Accept all the terms & conditions and press the button "continue" till you see the button "close".
 
-<img src="Images_MD/finishpythonmac.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/finishpythonmac.jpeg">
 
 **4rd.** Open your terminal to check if python is installed correctly.
 	- In the terminal you have to write the word 
@@ -114,7 +114,7 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 **5th.** This message have to appear:
 	> Python (the number of version) 
 
-<img src="Images_MD/terminalmac.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/terminalmac.jpeg">
 	
 - If appears, **CONGRATULIONS!** you are one step closer to use the application.
 	- Now still in the terminal write the next command:
@@ -154,7 +154,7 @@ and then press again the key enter.
 
 	> Python (the number of version)
 	
-<img src="Images_MD/linuxpython.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/linuxpython.jpeg">
 	
 - If appears, **CONGRATULIONS!** you are one step closer to use the application.
 
@@ -184,7 +184,7 @@ and then press the key enter.
 
 - Once you open the program, you are going to see something like this.
 
-<img src="Images_MD/main.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/main.jpeg">
 
 **Now follow this instructions:**
 
@@ -192,11 +192,11 @@ and then press the key enter.
 
 - It will open a window where you have to select a csv file to be solve:
 
-<img src="Images_MD/opcionarchivo.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/opcionarchivo.jpeg">
 
 - Example of the ecuations that are in the file
 
-<img src="Images_MD/problem.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/problem.jpeg">
 
 - **2nd** Now, once you upload the file press the option **Solve**.
 
@@ -204,21 +204,21 @@ and then press the key enter.
 
 - Once you save it and open the file. It will look like this the solution:
 
-<img src="Images_MD/solution.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/solution.jpeg">
 
 **Note: the program is designed to only use csv files.**
 
-<img src="Images_MD/csv.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/csv.jpeg">
 
 ### How to create an csv file.
 
 - Please open the windows office application **Excel**.
 
-<img src="Images_MD/excel.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/excel.jpeg">
 
 - Now, once you put the values like in this example, **please don´t forget to put the same values that are in the row 1 of the example in your file**
 
-<img src="Images_MD/problem.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/problem.jpeg">
 
 - Now, go to the spreadsheet, click in **file** and then click **Save As**. Choose where you want to save your file and then select **CSV** from the **Save as type** drop-down menu. And just click **Save**.
 
