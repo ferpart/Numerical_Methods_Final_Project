@@ -115,6 +115,20 @@ and then press the key enter.
 
 <img src="Images_MD/csv.jpeg">
 
+### How to create an csv file
+
+- Please open the windows office application **Excel**.
+
+<img src="Images_MD/excel.jpeg">
+
+- Now, once you put the values like in this example, **please don´t forget to put the same values that are in the row 1 of the example in your file**
+
+<img src="Images_MD/problem.jpeg">
+
+- Now, go to the spreadsheet, click in **file** and then click **Save As**. Choose where you want to save your file and then select **CSV** from the **Save as type** drop-down menu. And just click **Save**.
+
+**Congratulations!** you just created a **CSV file**. 
+
 ## If you have MAC follow this steps:
 
 **1st.** The first thing you have to do is to download python (If you already have it, you can skip this part and go to the 2nd point):
