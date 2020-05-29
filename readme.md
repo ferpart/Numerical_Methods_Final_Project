@@ -64,7 +64,7 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 	- **You have to see a list where appears the library numpy listed.**
 		- If it appears you are now ready to use the application. **If not** please return to the step **6th.**
 		
-**7th.** Please download the application named"xxxx.py" and put it your computer desktop.
+**7th.** Please download all the github in a **ZIP**, once you downloaded please unzip the file and put it your computer desktop.
 
 **8th.** Now, **still in the command prompt**, please write the next command step by step:
 - **step one:** write 
@@ -76,7 +76,9 @@ and press enter.
 	> C:\Users\username\desktop
 
 - **step three:** Now, just put 
-	> xxxx.py 
+	> main.py 
+	
+<img src="Images_MD/directionpython.jpeg">
 	
 and then press the key enter.
 		
