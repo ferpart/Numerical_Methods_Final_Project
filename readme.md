@@ -35,7 +35,7 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 
 **LIKE THIS**
 
-<img src="Images_MD/versionpython.jpeg">
+<img src="Images_MD/versionpython1.jpeg">
 
 - If appears, **CONGRATULIONS!** you are one step closer to use the application.
 	- Now still in the "command prompt" write the next command:
