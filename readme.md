@@ -118,7 +118,7 @@ and press **enter**.
 **5th.** This message have to appear:
 	> Python (the number of version) 
 
-<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/terminalmac.jpeg">
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/terminalmac1.jpeg">
 	
 - If appears, **CONGRATULATIONS!** you are one step closer to use the application.
 	- Now still in the terminal write the next command:
