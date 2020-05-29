@@ -111,7 +111,7 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 
 - In the terminal you have to write the word
 
-	> python3 --version (all lowercase, without quotes intothe terminal) 
+	> python --version (all lowercase, without quotes intothe terminal) 
 
 and press **enter**.
 		
