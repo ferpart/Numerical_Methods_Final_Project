@@ -67,7 +67,7 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 	
 	- If it appears you are now ready to use the application. **If not** please return to the step **6th.**
 		
-**7th.** Please download all the github in a **ZIP**, once you downloaded please unzip the file and put it your computer desktop.
+**7th.** Please download all the github in a **ZIP**, once you downloaded please **unzip** the file and put it your computer desktop.
 
 **8th.** Now, **still in the command prompt**, please write the next command step by step:
 - **step one:** write 
@@ -85,7 +85,102 @@ and press enter.
 	
 and then press the key enter.
 		
-### Now let´s start with the application
+**Note: To know how to use the application, please go to the bottom of this manual. To the section "Now let´s start with the application"**.
+
+## If you have MAC follow this steps:
+
+**1st.** The first thing you have to do is to download python (If you already have it, you can skip this part and go to the 2nd point):
+
+<img src="Images_MD/python.png" width="70" height="70">
+
+[Python](https://www.python.org/downloads/)
+
+Click on the button that says: **"Download Python 3.8.3"** and your download will start.
+
+<img src="Images_MD/downloadpython.jpeg">
+
+**2nd.** Now, once that is downloaded you have browse to the download folders and launch the installer and you will see a pop up.
+
+<img src="Images_MD/installpythononmac.jpeg">
+
+**3rd.** Accept all the terms & conditions and press the button "continue" till you see the button "close".
+
+<img src="Images_MD/finishpythononmac.jpeg">
+
+**4rd.** Open your terminal to check if python is installed correctly.
+	- In the terminal you have to write the word 
+		>python3 (all lowercase, without quotes intothe terminal) and press **enter**.
+		
+**5th.** This message have to appear:
+	> Python (the number of version) 
+
+<img src="Images_MD/terminalmac.jpeg">
+	
+- If appears, **CONGRATULIONS!** you are one step closer to use the application.
+	- Now still in the terminal write the next command:
+		> pip install numpy
+		
+	**wait until the message: "Successfully installed numpy-no.version" appears.**
+	
+	- If not, please try the command:
+		> sudo pip install numpy
+		
+	**wait until the message: "Successfully installed numpy-no.version" appears.**
+	
+- If it appears you are now **ready** to use the application. **If not please** return to the step 5th.
+	- If still does not work, please return to the **1st step.**
+	
+**6th.** Please download all the github in a **ZIP**, once you downloaded please **unzip** the file and put it your computer desktop.
+
+**7th.** Now, **still in terminal**, please follow the next instructions step by step:
+- **step one:** Drag the folder to the terminal and press the enter key.
+
+- **step two:** Now, just put 
+	> main.py
+	
+and then press again the key enter.
+		
+**Note: To know how to use the application, please go to the bottom of this manual. To the section "Now let´s start with the application"**
+
+## If you have Linux follow this steps:
+
+**1st.** In Linux the python language most be installed by default.
+
+**2nd.** Open up a terminal window and then type:
+
+	> python3 --version
+
+**3rd.** It would appear a messaage like this:
+
+	> Python (the number of version)
+	
+<img src="Images_MD/linuxpython.jpeg">
+	
+- If appears, **CONGRATULIONS!** you are one step closer to use the application.
+
+- **If not**, please put the next command:
+	> sudo apt-get install python3
+
+- Now still in the terminal window in case you have numpy installed please still write the next command to **upgrade or intall** numpy´s library:
+	> $ pip3 install numpy
+
+- Now, one more step, let´s gonna install the **tkinter library**, still in the terminal write this command:
+	> sudo apt install python3-tk
+	
+- Finally **you are now ready to use the application**. **If still there´s a problem** please return to the beginning of this part after 3rd step.
+
+**Now you are ready to use the program.**
+
+**4rd.** Once you all the github in a **ZIP** and **unzip** the application in the terminal put the next command:
+
+	> python3 "main.py" 
+
+and then press the key enter.
+
+**Note: To know how to use the application, please go to the bottom of this manual. To the section "Now let´s start with the application"**.
+
+
+## Now let´s start with the application
 
 - Once you open the program, you are going to see something like this.
 
@@ -128,85 +223,3 @@ and then press the key enter.
 - Now, go to the spreadsheet, click in **file** and then click **Save As**. Choose where you want to save your file and then select **CSV** from the **Save as type** drop-down menu. And just click **Save**.
 
 **Congratulations!** you just created a **CSV file**. 
-
-## If you have MAC follow this steps:
-
-**1st.** The first thing you have to do is to download python (If you already have it, you can skip this part and go to the 2nd point):
-
-[Python](https://www.python.org/downloads/)
-
-Click on the button that says: **"Download Python 3.8.3"** and your download will start.
-
-**2nd.** Now, once that is downloaded you have browse to the download folders and launch the installer and you will see a pop up.
-
-**3rd.** Accept all the terms & conditions and press the button "continue" till you see the button "close".
-
-**4rd.** Open your terminal to check if python is installed correctly.
-	- In the terminal you have to write the word 
-		>python3 (all lowercase, without quotes intothe terminal) and press **enter**.
-		
-**5th.** This message have to appear:
-	> Python (the number of version) 
-	
-- If appears, **CONGRATULIONS!** you are one step closer to use the application.
-	- Now still in the terminal write the next command:
-		> pip install numpy
-		
-	**wait until the message: "Successfully installed numpy-no.version" appears.**
-	
-	- If not, please try the command:
-		> sudo pip install numpy
-		
-	**wait until the message: "Successfully installed numpy-no.version" appears.**
-	
-- If it appears you are now **ready** to use the application. **If not please** return to the step 5th.
-	- If still does not work, please return to the **1st step.**
-	
-**6th.** Once you download the application. now, just put 
-
-	> "xxxx.py" 
-	
-and then press the key enter.
-
-**7th.** Feel free to put any value in the blanks for the volts and the resistor.
-
-**8th.** Now that you have enter the values, press the button **submit values** and you will get the answers you are searching for with this program.
-
-**Note: the program is designed to in case you put a value that is not an Integer, the progrma will close automatically.**
-
-## If you have Linux follow this steps:
-
-**1st.** In Linux the python language most be installed by default.
-
-**2nd.** Open up a terminal window and then type:
-
-	> python3 --version
-
-**3rd.** It would appear a messaage like this:
-
-	> Python (the number of version)
-	
-	
-- If appears, **CONGRATULIONS!** you are one step closer to use the application.
-
-- **If not**, please put the next command:
-	> sudo apt-get install python3
-
-- Now still in the terminal window in case you have numpy installed please still write the next command to **upgrade or intall** numpy´s library:
-	> $ pip3 install numpy
-	
-- If it appears **you are now ready to use the application**. **If not** please return to the beginning of this part after 3rd step.
-
-**Now you are ready to use the program.**
-
-**4rd.** Once you download the application in the terminal put the next command:
-
-	> python3 "xxxx.py" 
-
-and then press the key enter.
-
-**5th.** Feel free to put any value in the blanks for the volts and the resistor.
-
-**6th.** Now that you have enter the values, press the button **submit values** and you will get the answers you are searching for with this program.
-
-**Note: the program is designed to in case you put a value that is not an Integer, the progrma will close automatically.**
