@@ -62,7 +62,10 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 		> pip list
 		
 	- **You have to see a list where appears the library numpy listed.**
-		- If it appears you are now ready to use the application. **If not** please return to the step **6th.**
+	
+	<img src="Images_MD/piplist.jpeg">
+	
+	- If it appears you are now ready to use the application. **If not** please return to the step **6th.**
 		
 **7th.** Please download all the github in a **ZIP**, once you downloaded please unzip the file and put it your computer desktop.
 
