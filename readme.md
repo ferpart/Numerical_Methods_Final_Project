@@ -131,6 +131,8 @@ and press **enter**.
 		
 	**wait until the message: "Successfully installed numpy-no.version" appears.**
 	
+	<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/numpymac.jpeg">
+	
 - If it appears you are now **ready** to use the application. **If not please** return to the step 5th.
 	- If still does not work, please return to the **1st step.**
 	
@@ -141,6 +143,8 @@ and press **enter**.
 	> cd 
 	
 And then drag the folder to the terminal and press the enter key.
+
+<img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/startmac.jpeg">
 
 - **step two:** Now, just put 
 	> python main.py
