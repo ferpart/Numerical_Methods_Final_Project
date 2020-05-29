@@ -108,15 +108,19 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 <img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/finishpythonmac.jpeg">
 
 **4rd.** Open your terminal to check if python is installed correctly.
-	- In the terminal you have to write the word 
-		>python3 (all lowercase, without quotes intothe terminal) and press **enter**.
+
+- In the terminal you have to write the word
+
+	> python3 --version (all lowercase, without quotes intothe terminal) 
+
+and press **enter**.
 		
 **5th.** This message have to appear:
 	> Python (the number of version) 
 
 <img src="https://github.com/ferpart/Numerical_Methods_Final_Project/blob/media/Images_MD/terminalmac.jpeg">
 	
-- If appears, **CONGRATULIONS!** you are one step closer to use the application.
+- If appears, **CONGRATULATIONS!** you are one step closer to use the application.
 	- Now still in the terminal write the next command:
 		> pip install numpy
 		
@@ -133,10 +137,13 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 **6th.** Please download all the github in a **ZIP**, once you downloaded please **unzip** the file and put it your computer desktop.
 
 **7th.** Now, **still in terminal**, please follow the next instructions step by step:
-- **step one:** Drag the folder to the terminal and press the enter key.
+- **step one:** First put the command 
+	> cd 
+	
+And then drag the folder to the terminal and press the enter key.
 
 - **step two:** Now, just put 
-	> main.py
+	> python main.py
 	
 and then press again the key enter.
 		
