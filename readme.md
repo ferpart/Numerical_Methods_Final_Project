@@ -1,4 +1,4 @@
-# Step to use the application.
+# Steps to use the application.
 
 ## If you have windows follow this steps:
 
