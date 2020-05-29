@@ -4,9 +4,10 @@
 
 **1st.** The first thing you have to do is to download python (If you already have it, you can skip this part and go to the 2nd point):
 
-[Python](https://www.python.org/downloads/) ![alt text][logo]
 
 [logo]: https://github.com/ferpart/Numerical_Methods_Final_Project/blob/master/Images_MD/python.png "Python"
+
+[Python](https://www.python.org/downloads/) ![alt text][logo]
 
 Click on the button that says: **"Download Python 3.8.3"** and your download will start.
 
