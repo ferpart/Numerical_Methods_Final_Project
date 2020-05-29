@@ -85,11 +85,35 @@ and press enter.
 	
 and then press the key enter.
 		
-**9th.** Feel free to put any value in the blanks for the volts and the resistor.
+### Now let´s start with the application
 
-**10th.** Now that you have enter the values, press the button **submit values** and you will get the answers you are searching for with this program.
+- Once you open the program, you are going to see something like this.
 
-**Note: the program is designed to in case you put a value that is not an Integer, the progrma will close automatically.**
+<img src="Images_MD/main.jpeg">
+
+**Now follow this instructions:**
+
+- **1st** Select the option **Load**.
+
+- It will open a window where you have to select a csv file to be solve:
+
+<img src="Images_MD/opcionarchivo.jpeg">
+
+- Example of the ecuations that are in the file
+
+<img src="Images_MD/problem.jpeg">
+
+- **2nd** Now, once you upload the file press the option **Solve**.
+
+- **3rd** You will see that the botton **Save** it will available and would have two options to save the file as you want. Now please press the **Save** button and save your file with the name you like.
+
+- Once you save it and open the file. It will look like this the solution:
+
+<img src="Images_MD/solution.jpeg">
+
+**Note: the program is designed to only use csv files.**
+
+<img src="Images_MD/csv.jpeg">
 
 ## If you have MAC follow this steps:
 
