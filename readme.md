@@ -6,7 +6,7 @@
 
 [Python](https://www.python.org/downloads/) ![alt text][logo]
 
-[logo]: https://github.com/ferpart/Numerical_Methods_Final_Project/tree/master/Images MD/python.png "Python"
+[logo]: https://github.com/ferpart/Numerical_Methods_Final_Project/tree/master/Images_MD/python.png "Python"
 
 Click on the button that says: **"Download Python 3.8.3"** and your download will start.
 
