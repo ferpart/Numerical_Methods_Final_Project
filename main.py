@@ -1,3 +1,5 @@
+#!python3
+
 from Components import App
 
 def main():
