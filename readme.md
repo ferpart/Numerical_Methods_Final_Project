@@ -101,11 +101,11 @@ Click on the button that says: **"Download Python 3.8.3"** and your download wil
 
 **2nd.** Now, once that is downloaded you have browse to the download folders and launch the installer and you will see a pop up.
 
-<img src="Images_MD/installpythononmac.jpeg">
+<img src="Images_MD/installpythonmac.jpeg">
 
 **3rd.** Accept all the terms & conditions and press the button "continue" till you see the button "close".
 
-<img src="Images_MD/finishpythononmac.jpeg">
+<img src="Images_MD/finishpythonmac.jpeg">
 
 **4rd.** Open your terminal to check if python is installed correctly.
 	- In the terminal you have to write the word 
